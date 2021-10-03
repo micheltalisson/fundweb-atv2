@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ativade 02 - Michel Lima</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="estilos.css">
+        <script>
+            function formulario(){
+                var nome = document.getElementById("nome");
+                var email = document.getElementById("email");
+                var mensagem = document.getElementById("mensagem");
+
+                if (nome.value != "" && email.value!="" && mensagem.value!=""){
+                    alert("Obrigado pela mensagem, " + nome.value);
+                }
+                else {
+                    alert("Por favor preencha todos os campos.");
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+        <header> <!-- Comeco cabecalho-->
+            <div class="dentro_cabecalho">
+                <div class="logo">
+                    <div>
+                       <a href="index.htm"> <img src="./assets/Michel Lima-logos_white.png"> </a>
+                    </div>
+                </div>
+    
+                <nav>
+                    <li><span><a href="">Sobre</a></span></li>
+                    <li><span><a href="contato.htm">Contato</a></span></li>
+                </nav>
+            </div>
+        </header>
+
+        <div class="main">
+            <h1>Entre em contato comigo!</h1>
+            
+            <form>
+                <label for="nome">Seu nome:</label>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Seu email:</label>
+                <input type="text" id="email" name="email"><br>
+                
+                <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Sua Mensagem"></textarea><br>
+                <input type="submit" value="Enviar" onclick="formulario()">
+            </form>
+        </div>
+
+        <footer>
+
+        </footer>
+    </body>
+    </html>

@@ -1,0 +1,153 @@
+/* Default styles for the browser */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width: 100vw;
+    height: 100px;
+    border-bottom: solid 1px rgba(16, 16, 16, 0.1);
+    font-family: 'Poppins';
+    background-color: black;
+}
+
+header .dentro_cabecalho{
+    width: 1300px; /* This is the inner width of the content inside of your header (80%, etc) */
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    color: white;
+}
+
+header .logo{
+    display: table;
+    height: 100%;
+    float: left;
+}
+
+header .logo div{
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header .logo img{
+    height: 250px;
+    width: 100%;
+    margin-top: -75px;
+}
+
+header nav{
+    float: right;
+    height: 100%;
+}
+
+header nav li{
+    display: table;
+    height: 100%;
+    float: left;
+    margin-right: 30px;
+}
+
+header nav li:last-of-type{
+    margin-right: 0;
+}
+
+header nav span {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+header nav a{
+    color: white;
+}
+
+header nav .button{
+    background-color: #1ab26b; /* This HEX is the color of the button */
+    color: #FFF;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+header nav .button:hover{
+    filter: brightness(1.05);
+}
+.main{
+    font-family: 'Poppins';
+    padding-left: 29%;
+}
+.main h1{
+    padding-top: 2.5%;
+    padding-bottom: 5%;
+}
+
+.main img {
+    float: top;
+    max-width: 50%;
+    min-width: 50%;
+    min-height: 50%;
+    padding-bottom: 5%;
+}
+
+.box {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 1em;
+    text-align: center;
+  }
+.after-box {
+    clear: left;
+    padding-top: 20%;
+  }
+  
+.clearfix {
+    overflow: auto;
+  }
+input, textarea {
+    width: 200px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid;
+}
+
+.enviar {
+    background-color: #66FFFF;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+    color: black;
+}
+
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
+
+form label {
+    margin-left: 20px;
+    color: black;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    background-color: black;
+    width: 100%;
+  }
